@@ -82,32 +82,19 @@ html[lang="uk"] [lang="en"] { display: none; }
 
 /* Home */
 .hero {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
-  gap: 48px;
-  padding: 120px 0 96px;
+  padding: 96px 0 80px;
   border-bottom: 1px solid var(--line);
 }
 .hero h1 {
-  margin: 0;
-  font: 300 clamp(48px, 7vw, 92px)/0.98 var(--serif);
-  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+  max-width: 26ch;
+  font: 400 clamp(36px, 5vw, 56px)/1.1 var(--serif);
+  letter-spacing: -0.01em;
 }
-.hero h1 em { font-style: italic; color: var(--accent-ink); }
 .hero .lede {
-  align-self: end;
   margin: 0;
   color: var(--ink-2);
-  font-size: 18px;
-  max-width: 34ch;
-}
-.hero .lede::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: var(--accent);
-  margin-bottom: 20px;
+  max-width: 50ch;
 }
 
 .rows { padding: 24px 0 96px; }
@@ -121,10 +108,8 @@ html[lang="uk"] [lang="en"] { display: none; }
 .row:last-child { border-bottom: 0; }
 .row h2 {
   margin: 0;
-  font: 500 13px/1.8 var(--sans);
+  font: 500 16px/1.65 var(--sans);
   color: var(--ink-3);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 .row p { margin: 0 0 12px; max-width: 60ch; }
 .row p:last-child { margin-bottom: 0; }
@@ -173,8 +158,7 @@ footer.bottom a { color: var(--ink-3); }
   .wrap { padding: 0 20px; }
   nav.top a { display: none; }
   .lang { margin-left: 0; }
-  .hero { grid-template-columns: 1fr; gap: 32px; padding: 72px 0 64px; }
-  .hero h1 { font-size: 42px; }
+  .hero { padding: 56px 0 48px; }
   .row, .doc { grid-template-columns: 1fr; gap: 12px; }
   .doc { padding-top: 48px; }
   .doc aside { position: static; }
